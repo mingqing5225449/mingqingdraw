@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const overtoneGains = [1, 0.7, 0.5, 0.3, 0.15]; // Relative gains
 
         const masterGain = localAudioCtx.createGain();
-        masterGain.connect(localAudioCtx.destination);
+        masterGain.connect(localAudioCtx.des明卿tion);
 
         // Envelope: Fast attack, fairly quick decay
         masterGain.gain.setValueAtTime(0, time);
@@ -256,6 +256,6 @@ document.addEventListener('DOMContentLoaded', () => {
         <b>X轴位置：</b>决定音符何时播放<br>（从左到右，按节奏进行量化）。<br>
         <b>颜色：</b>选择音高的八度范围<br>（红色：中音区，绿色：高一个八度，蓝色：低一个八度）。<br>
         <b>画笔大小：</b>影响音量，并略微影响音符的持续时间。<br>
-        <b>制作人：Tina</b>
+        <b>制作人：明卿</b>
     `;
 });
